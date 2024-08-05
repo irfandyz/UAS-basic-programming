@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# Pengecualian untuk file dan direktori yang ada
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php
+
